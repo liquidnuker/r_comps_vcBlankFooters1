@@ -5,11 +5,32 @@ webpackJsonp([1],{
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__js_componentinjector_js__ = __webpack_require__(10);
 //
 //
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -18,6 +39,44 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
   mounted: function mounted() {
     console.log("FooterBlanks1.vue mounted");
+    this.mountSegment1();
+  },
+  methods: {
+    mountSegment1: function mountSegment1() {
+      var FooterSegment1 = function FooterSegment1(resolve) {
+        __webpack_require__.e/* require.ensure */(7).then((function () {
+          resolve(__webpack_require__(15));
+        }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
+      };
+      __WEBPACK_IMPORTED_MODULE_0__js_componentinjector_js__["a" /* inject */]("#footer_segment1_mount", FooterSegment1);
+      this.mountSegment2();
+    },
+    mountSegment2: function mountSegment2() {
+      var FooterSegment2 = function FooterSegment2(resolve) {
+        __webpack_require__.e/* require.ensure */(6).then((function () {
+          resolve(__webpack_require__(18));
+        }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
+      };
+      __WEBPACK_IMPORTED_MODULE_0__js_componentinjector_js__["a" /* inject */]("#footer_segment2_mount", FooterSegment2);
+      this.mountSegment3();
+    },
+    mountSegment3: function mountSegment3() {
+      var FooterSegment3 = function FooterSegment3(resolve) {
+        __webpack_require__.e/* require.ensure */(5).then((function () {
+          resolve(__webpack_require__(19));
+        }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
+      };
+      __WEBPACK_IMPORTED_MODULE_0__js_componentinjector_js__["a" /* inject */]("#footer_segment3_mount", FooterSegment3);
+      this.mountSegment4();
+    },
+    mountSegment4: function mountSegment4() {
+      var FooterSegment4 = function FooterSegment4(resolve) {
+        __webpack_require__.e/* require.ensure */(4).then((function () {
+          resolve(__webpack_require__(20));
+        }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
+      };
+      __WEBPACK_IMPORTED_MODULE_0__js_componentinjector_js__["a" /* inject */]("#footer_segment4_mount", FooterSegment4);
+    }
   }
 });
 
@@ -27,10 +86,36 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _vm._m(0)
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "row"
-  }, [_vm._v("\r\n  zzzzzzz\r\n")])
-},staticRenderFns: []}
+  }, [_c('div', {
+    staticClass: "col-sm-3"
+  }, [_c('div', {
+    attrs: {
+      "id": "footer_segment1_mount"
+    }
+  }, [_vm._v("\r\n      loading...\r\n    ")])]), _vm._v(" "), _c('div', {
+    staticClass: "col-sm-3"
+  }, [_c('div', {
+    attrs: {
+      "id": "footer_segment2_mount"
+    }
+  }, [_vm._v("\r\n      loading...\r\n    ")])]), _vm._v(" "), _c('div', {
+    staticClass: "col-sm-3"
+  }, [_c('div', {
+    attrs: {
+      "id": "footer_segment3_mount"
+    }
+  }, [_vm._v("\r\n      loading...\r\n    ")])]), _vm._v(" "), _c('div', {
+    staticClass: "col-sm-3"
+  }, [_c('div', {
+    attrs: {
+      "id": "footer_segment4_mount"
+    }
+  }, [_vm._v("\r\n      loading...\r\n    ")])])])
+}]}
 module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
