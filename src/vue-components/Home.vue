@@ -3,16 +3,16 @@
     <!-- begin BlankFooter1 placeholder -->
     <h2 class="item-id">BlankFooter1</h2>
     <!-- BlankFooter1 -->
-    <!-- end BlankFooter1 -->
     <div id="vc_BlankFooter1_mount">
     </div>
+    <!-- end BlankFooter1 -->
     <!-- end BlankFooter1 placeholder -->
     <!-- begin BlankFooter1 placeholder -->
     <h2 class="item-id">BlankFooter2</h2>
     <!-- BlankFooter1 -->
-    <!-- end BlankFooter1 -->
     <div id="vc_BlankFooter2_mount">
     </div>
+    <!-- end BlankFooter1 -->
     <!-- end BlankFooter1 placeholder -->
   </div>
 </template>

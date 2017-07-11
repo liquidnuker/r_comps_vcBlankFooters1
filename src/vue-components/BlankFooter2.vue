@@ -1,5 +1,5 @@
 <template>
-<div class="row">
+<footer class="row">
   <div class="col-sm-6">
     <div id="footer_segment1_mount">
       loading...
@@ -15,7 +15,7 @@
       loading...
     </div>
   </div>
-</div>
+</footer>
 </template>
 <script>
 import {inject} from "../js/componentinjector.js";
