@@ -1,6 +1,6 @@
 <template>
 <div class="row">
-  <div class="col-sm-6">
+  <div class="col-sm-3">
     <div id="footer_segment1_mount">
       loading...
     </div>
@@ -15,6 +15,11 @@
       loading...
     </div>
   </div>
+  <div class="col-sm-3">
+    <div id="footer_segment4_mount">
+      loading...
+    </div>
+  </div>
 </div>
 </template>
 <script>
@@ -26,7 +31,7 @@ export default {
     }
   },
   mounted: function () {
-    console.log("FooterBlanks2.vue mounted");
+    console.log("BlankFooter1.vue mounted");
     this.mountSegment1();
   },
   methods: {
@@ -55,6 +60,15 @@ export default {
         })
       };
       inject("#footer_segment3_mount", FooterSegment3);
+      this.mountSegment4();
+    },
+    mountSegment4: function() {
+      const FooterSegment4 = resolve => {
+        require.ensure(['./FooterSegment4.vue'], () => {
+          resolve(require('./FooterSegment4.vue'))
+        })
+      };
+      inject("#footer_segment4_mount", FooterSegment4);
     }
   }
 }

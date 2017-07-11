@@ -1,19 +1,19 @@
 <template>
   <div class="row">
-    <!-- begin FooterBlanks1 placeholder -->
-    <h2 class="item-id">FooterBlanks1</h2>
-    <!-- FooterBlanks1 -->
-    <!-- end FooterBlanks1 -->
-    <div id="vc_FooterBlanks1_mount">
+    <!-- begin BlankFooter1 placeholder -->
+    <h2 class="item-id">BlankFooter1</h2>
+    <!-- BlankFooter1 -->
+    <!-- end BlankFooter1 -->
+    <div id="vc_BlankFooter1_mount">
     </div>
-    <!-- end FooterBlanks1 placeholder -->
-    <!-- begin FooterBlanks1 placeholder -->
-    <h2 class="item-id">FooterBlanks2</h2>
-    <!-- FooterBlanks1 -->
-    <!-- end FooterBlanks1 -->
-    <div id="vc_FooterBlanks2_mount">
+    <!-- end BlankFooter1 placeholder -->
+    <!-- begin BlankFooter1 placeholder -->
+    <h2 class="item-id">BlankFooter2</h2>
+    <!-- BlankFooter1 -->
+    <!-- end BlankFooter1 -->
+    <div id="vc_BlankFooter2_mount">
     </div>
-    <!-- end FooterBlanks1 placeholder -->
+    <!-- end BlankFooter1 placeholder -->
   </div>
 </template>
 <script>
@@ -25,25 +25,25 @@ import {inject} from "../js/componentinjector.js";
     },
     mounted: function () {
       console.log("Home.vue mounted");
-      this.mountFooterBlanks1()
+      this.mountBlankFooter1()
     },
     methods: {
-      mountFooterBlanks1: function() {
-        const FooterBlanks1 = resolve => {
-          require.ensure(['./FooterBlanks1.vue'], () => {
-            resolve(require('./FooterBlanks1.vue'))
+      mountBlankFooter1: function() {
+        const BlankFooter1 = resolve => {
+          require.ensure(['./BlankFooter1.vue'], () => {
+            resolve(require('./BlankFooter1.vue'))
           })
         };
-        inject("#vc_FooterBlanks1_mount", FooterBlanks1);
-        this.mountFooterBlanks2();
+        inject("#vc_BlankFooter1_mount", BlankFooter1);
+        this.mountBlankFooter2();
       },
-      mountFooterBlanks2: function() {
-        const FooterBlanks2 = resolve => {
-          require.ensure(['./FooterBlanks2.vue'], () => {
-            resolve(require('./FooterBlanks2.vue'))
+      mountBlankFooter2: function() {
+        const BlankFooter2 = resolve => {
+          require.ensure(['./BlankFooter2.vue'], () => {
+            resolve(require('./BlankFooter2.vue'))
           })
         };
-        inject("#vc_FooterBlanks2_mount", FooterBlanks2);
+        inject("#vc_BlankFooter2_mount", BlankFooter2);
       }
     }
   }
