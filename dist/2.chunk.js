@@ -1,0 +1,1 @@
+webpackJsonp([2],{19:function(e,n,t){"use strict";Object.defineProperty(n,"__esModule",{value:!0}),n.default={data:function(){return{}}}},20:function(e,n){e.exports={render:function(){var e=this,n=e.$createElement;return(e._self._c||n)("div",[e._v("\r\n  FooterSegment2\r\n")])},staticRenderFns:[]}},9:function(e,n,t){var r=t(0)(t(19),t(20),null,null);e.exports=r.exports}});
